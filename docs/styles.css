@@ -297,3 +297,32 @@ body {
   z-index: -1;
   filter: blur(55px);
 }
+/* NAV FIX — HUMANİ5 Stable v0.2 */
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px 0;
+  margin-bottom: 40px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffd83b;
+  font-weight: bold;
+  transition: 0.2s ease;
+}
+
+nav a:hover {
+  color: white;
+  text-shadow: 0 0 10px #ffe985;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
