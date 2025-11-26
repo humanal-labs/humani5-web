@@ -227,3 +227,20 @@ footer {
   color: #aaa;
   line-height: 1.5;
 }
+/* Kartların hizasını eşitle */
+.core-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.core-card {
+    flex: 1 1 240px;
+    min-height: 200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
