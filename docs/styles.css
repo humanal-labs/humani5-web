@@ -1,3 +1,55 @@
+/* ===== NAVBAR FIX ===== */
+.navbar {
+    width: 100%;
+    padding: 40px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+    font-size: 18px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #ffd000;
+}
+
+/* Brand text */
+.nav-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.brand-text {
+    color: #ffd000;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.brand-sub {
+    color: #ccc;
+    font-size: 14px;
+    margin-top: -4px;
+}
+
+/* Toggle button */
+#modeToggle {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
 body {
   font-family: Arial, sans-serif;
   background: #0d0d0d;
