@@ -93,3 +93,104 @@ footer {
 @keyframes fadeIn {
   to { opacity: 1; }
 }
+/* ---------------------------------------------------
+   HUMANI5 — Core Web Style
+   Dark Mode • Neon Yellow Accent • Grid Layout
+--------------------------------------------------- */
+
+/* Genel Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #0b0b0c;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* Başlıklar */
+h1, h2, h3 {
+  color: #ffd000;
+  font-weight: 600;
+}
+
+/* Hero Alanı */
+.hero {
+  margin-top: 40px;
+}
+
+.hero p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #e0e0e0;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 14px 28px;
+  background: #ffd000;
+  color: #000;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: #ffe65c;
+  transform: translateY(-2px);
+}
+
+/* ------------------------------
+   CORE GRID (SYSTEM MAP)
+------------------------------ */
+
+.core-grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  padding: 20px;
+}
+
+.core-card {
+  background: #1a1a1c;
+  border: 1px solid #2a2a2c;
+  border-radius: 12px;
+  padding: 20px;
+  color: #ddd;
+  text-align: left;
+  transition: 0.25s;
+}
+
+.core-card h3 {
+  font-size: 1.3rem;
+  color: #ffd000;
+  margin-bottom: 10px;
+}
+
+.core-card p {
+  line-height: 1.5;
+  font-size: 0.95rem;
+  color: #cfcfcf;
+}
+
+.core-card:hover {
+  transform: translateY(-4px);
+  border-color: #ffd000;
+  box-shadow: 0 0 18px rgba(255, 208, 0, 0.15);
+}
+
+/* Footer */
+footer {
+  margin-top: 60px;
+  font-size: 0.85rem;
+  color: #888;
+}
