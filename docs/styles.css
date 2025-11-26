@@ -542,3 +542,12 @@ nav a:hover {
 #modeToggle {
   cursor: pointer;
 }
+.navbar {
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    padding: 18px 40px;
+}
