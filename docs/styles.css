@@ -360,3 +360,49 @@ nav a:hover {
     font-size: 0.9rem;
   }
 }
+/* TOP NAV AFTER FIX */
+.navbar {
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-text {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.brand-sub {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.nav-links a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.nav-links a:hover {
+  color: #ffd700;
+}
+
+#modeToggle {
+  cursor: pointer;
+}
