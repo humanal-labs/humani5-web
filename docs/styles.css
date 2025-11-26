@@ -1,3 +1,15 @@
+/* Body varsayılan boşlukları sıfırlanıyor */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar sarkmasını engelliyor */
+.navbar {
+    margin: 0;
+    padding: 0;
+}
+
 /* ===== NAVBAR FIX ===== */
 .navbar {
     width: 100%;
