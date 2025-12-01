@@ -1,85 +1,74 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HUMAN-AL — Sistem Haritası</title>
-    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="theme-dark">
-
-<header class="site-header">
-    <div class="header-inner">
-        <a href="index.html" class="logo">
-            <span class="logo-mark">●</span>
-            <span class="logo-text">HUMAN-AL</span>
-            <span class="logo-sub">Signal · Identity · Integrity</span>
+<body class="dark">
+<header class="topbar">
+    <div class="container header-inner">
+        <a class="logo" href="index.html">
+            <span class="logo-main">HUMAN-AL</span>
+            <span class="logo-sub">Signal • Identity • Integrity</span>
         </a>
 
-        <nav class="main-nav">
+        <nav>
             <a href="index.html">Ana Sayfa</a>
             <a href="systems.html" class="active">Sistem Haritası</a>
             <a href="contact.html">İletişim</a>
         </nav>
 
-        <button id="themeToggle" class="theme-toggle">Light / Dark</button>
+        <button id="themeToggle" class="toggle">🌙</button>
     </div>
 </header>
 
-
-<section class="page-hero">
+<section class="page">
     <div class="container">
         <h1>HUMANi5 — System Map</h1>
         <p class="lead">Gerçek sinyal nerede, veri kime ait, sistem ne kadar tutarlı?</p>
 
-        <div class="btn-row">
-            <a href="index.html" class="btn btn-secondary">Ana Sayfaya Dön</a>
-            <a href="contact.html" class="btn btn-outline">Bizimle Konuşun</a>
+        <div class="actions">
+            <a class="btn outline" href="index.html">Ana Sayfaya Dön</a>
+            <a class="btn primary" href="contact.html">Bizimle Konuşun</a>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <h3>Signal Layer</h3>
+                <ul>
+                    <li>Veri gürültüsünü azaltma</li>
+                    <li>Operasyonel panel tasarımı</li>
+                    <li>Aksiyon özetleri</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Identity Layer</h3>
+                <ul>
+                    <li>Rol & erişim mimarisi</li>
+                    <li>Sahiplik izi (audit trail)</li>
+                    <li>Kimlik politikaları</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Integrity Layer</h3>
+                <ul>
+                    <li>Tutarlılık kontrolü</li>
+                    <li>Risk & uyum</li>
+                    <li>Denetlenebilir otomasyon</li>
+                </ul>
+            </div>
         </div>
     </div>
 </section>
 
-
-<section class="section">
-    <div class="container grid-3">
-        
-        <article class="card">
-            <h3>Signal Layer</h3>
-            <p>Karmaşık veri yığınlarını sadeleştirir ve anlamlı sinyaller üretir.</p>
-            <ul>
-                <li>Veri gürültüsünü azaltma</li>
-                <li>Operasyonel panel tasarımı</li>
-                <li>Aksiyon özetleri</li>
-            </ul>
-        </article>
-
-        <article class="card">
-            <h3>Identity Layer</h3>
-            <p>Verinin gerçek sahibini ve rol izlerini takip eder.</p>
-            <ul>
-                <li>Rol & erişim mimarisi</li>
-                <li>Sahiplik izi (audit trail)</li>
-                <li>Kimlik güvenlik politikaları</li>
-            </ul>
-        </article>
-
-        <article class="card">
-            <h3>Integrity Layer</h3>
-            <p>Tüm sinyallerin tutarlılığını kontrol eder ve riskli davranışları işaretler.</p>
-            <ul>
-                <li>Kurallı & şeffaf karar akışları</li>
-                <li>Risk & uyum (compliance)</li>
-                <li>Denetlenebilir otomasyon</li>
-            </ul>
-        </article>
-
-    </div>
-</section>
-
-<footer class="site-footer">
+<footer>
     <div class="container footer-inner">
-        © 2025 HUMAN-AL Labs
+        <span>© 2025 HUMAN-AL Labs</span>
     </div>
 </footer>
 
