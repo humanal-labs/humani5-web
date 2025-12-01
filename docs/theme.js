@@ -1,23 +1,14 @@
-const toggle = document.getElementById("themeToggle");
 const body = document.body;
+const toggle = document.getElementById("themeToggle");
 
-function setTheme(mode) {
-    if (mode === "light") {
-        body.classList.remove("theme-dark");
-        body.classList.add("theme-light");
-        toggle.textContent = "Dark Mode";
-    } else {
-        body.classList.remove("theme-light");
-        body.classList.add("theme-dark");
-        toggle.textContent = "Light Mode";
-    }
+function set(mode) {
+    body.className = mode;
+    toggle.textContent = mode === "dark" ? "🌙" : "☀️";
+    localStorage.setItem("theme", mode);
 }
 
-toggle.addEventListener("click", () => {
-    const isDark = body.classList.contains("theme-dark");
-    const next = isDark ? "light" : "dark";
-    localStorage.setItem("humanal-theme", next);
-    setTheme(next);
-});
+set(localStorage.getItem("theme") || "dark");
 
-setTheme(localStorage.getItem("humanal-theme") || "dark");
+toggle.onclick = () => {
+    set(body.className === "dark" ? "light" : "dark");
+};
