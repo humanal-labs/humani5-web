@@ -1,81 +1,175 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HUMANi5 — System Map</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HUMAN-AL — Sistem Haritası</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
+<body class="theme-dark">
+  <!-- Üst Bar -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark"></span>
+        <span class="logo-text">
+          HUMAN-AL
+          <span class="logo-sub">Signal · Identity · Integrity</span>
+        </span>
+      </a>
 
-<body>
-  <nav class="top-nav">
-  <a href="index.html">Ana Sayfa</a>
-  <a href="systems.html">Sistem Haritası</a>
-  <a href="contact.html">İletişim</a>
-</nav>
-  <header>
-    <h1 class="fade-in">HUMANi5 — System Map</h1>
+      <nav class="main-nav">
+        <a href="index.html">Ana Sayfa</a>
+        <a href="systems.html" class="active">Sistem Haritası</a>
+        <a href="contact.html">İletişim</a>
+      </nav>
+
+      <button id="themeToggle" class="theme-toggle">Light / Dark</button>
+    </div>
   </header>
 
-  <section class="content">
-    <h2>Çekirdek Yapı</h2>
+  <main>
+    <!-- Hero -->
+    <section class="page-hero page-hero--systems">
+      <div class="container">
+        <p class="eyebrow">HUMANi5 — System Map</p>
+        <h1>Çekirdek Yapı</h1>
+        <p class="hero-lead">
+          HUMAN-AL, her projeyi aynı üç soru üzerinden tasarlar:
+          <strong>“Gerçek sinyal nerede, veri kime ait, sistem ne kadar tutarlı?”</strong>
+        </p>
 
- <div class="core-grid">
-<div class="core-card">
-    <h3>core-signal</h3>
-    <p>
-        Gürültüyü azaltıp gerçek sinyali öne çıkaran katman.
-        Anlamsız veriyi eler, karar verecek kişiye sade bir tablo bırakır.
-    </p>
+        <div class="hero-actions">
+          <a href="index.html" class="btn btn-secondary">Ana sayfaya dön</a>
+          <a href="contact.html" class="btn btn-primary-outline">Bizimle konuşun</a>
+        </div>
+      </div>
+    </section>
 
-    <!-- Core-Signal Beta Button -->
-    <a 
-       href="https://forms.gle/gh4YWbKXZLxqGfAYA" 
-       target="_blank" 
-       class="btn">
-       Sinyal Gönder →
-    </a>
-</div>
+    <!-- Katman Kartları -->
+    <section class="section section-tight">
+      <div class="container">
+        <h2>Çekirdek Katmanlar</h2>
+        <p class="section-lead">
+          HUMAN-AL çekirdeği, sinyalden aksiyona kadar tüm akışı
+          <strong>Signal → Identity → Integrity</strong> zinciriyle modeller.
+        </p>
 
-    <div class="core-card">
-      <h3>core-identity</h3>
-      <p>
-        “Bu kimin verisi, kime hizmet ediyor?” sorusunun cevabı.
-        İnsan & ekip kimliğini korur, maskeleri değil gerçek sahipliği takip eder.
-      </p>
+        <div class="grid grid-3">
+          <!-- Signal -->
+          <article class="card layer-card">
+            <h3>Signal Layer</h3>
+            <p>
+              Karmaşık veri yığınlarını sadeleştirir. Anlamsız veriyi eleyip,
+              karar verici için tek bakışta okunabilir sinyaller üretir.
+            </p>
+            <ul>
+              <li>Veri gürültüsünü azaltma</li>
+              <li>Operasyonel gösterge panelleri</li>
+              <li>Yönetim için net aksiyon özetleri</li>
+            </ul>
+            <a href="contact.html" class="card-link">Sinyal gönder →</a>
+          </article>
+
+          <!-- Identity -->
+          <article class="card layer-card">
+            <h3>Identity Layer</h3>
+            <p>
+              “Bu veri kimin, kime hizmet ediyor?” sorusunun cevabını netleştirir.
+              Maske değil, gerçek sahipliği takip eder.
+            </p>
+            <ul>
+              <li>Rol &amp; erişim mimarisi</li>
+              <li>Veri sahipliği &amp; iz izi (audit trail)</li>
+              <li>Kimlik odaklı güvenlik politikaları</li>
+            </ul>
+            <a href="contact.html" class="card-link">Kimlik mimarisi tasarla →</a>
+          </article>
+
+          <!-- Integrity -->
+          <article class="card layer-card">
+            <h3>Integrity Layer</h3>
+            <p>
+              Aynı olaya dair tüm sinyallerin tutarlılığını kontrol eder.
+              Çelişkili hareketleri, riskli desenleri ve güvenlik açıklarını işaretler.
+            </p>
+            <ul>
+              <li>Kurallı &amp; şeffaf karar akışı</li>
+              <li>Risk &amp; uyum (compliance) katmanı</li>
+              <li>Denetlenebilir otomasyon</li>
+            </ul>
+            <a href="contact.html" class="card-link">Denetim senaryosu kur →</a>
+          </article>
+        </div>
+
+        <!-- AI Layer (yakında) -->
+        <div class="ai-layer-banner">
+          <h3>AI Layer (yakında)</h3>
+          <p>
+            HUMANi5 çekirdeğinin üstüne oturacak özel ajanlar, analiz botları ve
+            otomasyon köprüleri için ayrılmış katman.  
+            <span class="muted">Yalnızca net sinyal alanı genişletir; gürültü eklemez.</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kullanım Alanları (özet) -->
+    <section class="section section-muted">
+      <div class="container">
+        <h2>Nerede Kullanılır?</h2>
+        <div class="grid grid-3">
+          <div class="card mini">
+            <h4>Operasyon Panelleri</h4>
+            <p>Şirket genelinde tek “gerçeklik tablosu” ile karar alma sürecini sadeleştirir.</p>
+          </div>
+          <div class="card mini">
+            <h4>Risk &amp; Uyum</h4>
+            <p>Regülasyon ve iç politika gereksinimlerini otomatik olarak işaretler.</p>
+          </div>
+          <div class="card mini">
+            <h4>AI-Native Çözümler</h4>
+            <p>Mevcut sistemlerin üstüne sessiz, yüksek güven katmanı olarak oturur.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© 2025 HUMAN-AL Labs</span>
+      <span class="footer-note">Hız değil; doğru sinyale odaklanan yapay zekâ altyapısı.</span>
     </div>
-
-    <div class="core-card">
-      <h3>core-integrity</h3>
-      <p>
-        Aynı olaya dair tüm sinyallerin tutarlılığını kontrol eder.
-        Çelişkili hareketleri, riskli desenleri ve güvenlik açıklarını işaretler.
-      </p>
-    </div>
-
-    <div class="core-card">
-      <h3>core-guides</h3>
-      <p>
-        Sinyali aldıktan sonra “şimdi ne yapmalıyım?” sorusuna cevap veren katman.
-        Operasyonel rehberler, ritüeller ve review formatlarını burada tutar.
-      </p>
-    </div>
-
-    <div class="core-card">
-      <h3>AI layer (yakında)</h3>
-      <p>
-        HUMANi5 çekirdeğinin üstüne oturacak; özel ajanlar, analiz botları
-        ve otomasyon köprüleri için ayrılmış katman.
-      </p>
-    </div>
-
-  </div>
-
-</section>
-  </section>
-
-  <footer>
-    <a href="index.html" class="btn">← Geri Dön</a>
   </footer>
+
+  <script>
+    // Basit tema toggle – ana sayfadaki ile aynı mantık
+    const toggle = document.getElementById('themeToggle');
+    const body = document.body;
+
+    function applyTheme(mode) {
+      if (mode === 'light') {
+        body.classList.remove('theme-dark');
+        body.classList.add('theme-light');
+        toggle.textContent = 'Dark Mode';
+      } else {
+        body.classList.remove('theme-light');
+        body.classList.add('theme-dark');
+        toggle.textContent = 'Light Mode';
+      }
+    }
+
+    const saved = window.localStorage.getItem('humanal-theme');
+    applyTheme(saved || 'dark');
+
+    toggle.addEventListener('click', () => {
+      const current = body.classList.contains('theme-dark') ? 'dark' : 'light';
+      const next = current === 'dark' ? 'light' : 'dark';
+      window.localStorage.setItem('humanal-theme', next);
+      applyTheme(next);
+    });
+  </script>
 </body>
 </html>
