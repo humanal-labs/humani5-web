@@ -1,74 +1,116 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HUMAN-AL — Sistem Haritası</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HUMANi5 — System Map</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
-
-<body class="dark">
-<header class="topbar">
+<body class="theme-dark">
+<header class="site-header">
     <div class="container header-inner">
-        <a class="logo" href="index.html">
-            <span class="logo-main">HUMAN-AL</span>
-            <span class="logo-sub">Signal • Identity • Integrity</span>
+        <a href="index.html" class="logo">
+            <span class="logo-mark"></span>
+            <span class="logo-text">HUMAN-AL</span>
+            <span class="logo-tagline">Signal · Identity · Integrity</span>
         </a>
 
-        <nav>
-            <a href="index.html">Ana Sayfa</a>
-            <a href="systems.html" class="active">Sistem Haritası</a>
-            <a href="contact.html">İletişim</a>
+        <nav class="main-nav">
+            <a href="index.html" class="nav-link">Ana Sayfa</a>
+            <a href="systems.html" class="nav-link active">Sistem Haritası</a>
+            <a href="contact.html" class="nav-link">İletişim</a>
         </nav>
 
-        <button id="themeToggle" class="toggle">🌙</button>
+        <button id="themeToggle" class="theme-toggle" aria-label="Tema değiştir">
+            ☾
+        </button>
     </div>
 </header>
 
-<section class="page">
-    <div class="container">
-        <h1>HUMANi5 — System Map</h1>
-        <p class="lead">Gerçek sinyal nerede, veri kime ait, sistem ne kadar tutarlı?</p>
+<main>
+    <section class="page-hero">
+        <div class="container">
+            <p class="eyebrow">HUMANi5 — System Map</p>
+            <h1 class="page-title">Gerçek sinyal nerede, veri kime ait, sistem ne kadar tutarlı?</h1>
+            <p class="page-lead">
+                HUMAN-AL, her projeyi aynı üç soru üzerinden tasarlar ve akışı
+                <strong>Signal → Identity → Integrity</strong> zinciriyle modeller.
+            </p>
 
-        <div class="actions">
-            <a class="btn outline" href="index.html">Ana Sayfaya Dön</a>
-            <a class="btn primary" href="contact.html">Bizimle Konuşun</a>
-        </div>
-
-        <div class="grid">
-            <div class="card">
-                <h3>Signal Layer</h3>
-                <ul>
-                    <li>Veri gürültüsünü azaltma</li>
-                    <li>Operasyonel panel tasarımı</li>
-                    <li>Aksiyon özetleri</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <h3>Identity Layer</h3>
-                <ul>
-                    <li>Rol & erişim mimarisi</li>
-                    <li>Sahiplik izi (audit trail)</li>
-                    <li>Kimlik politikaları</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <h3>Integrity Layer</h3>
-                <ul>
-                    <li>Tutarlılık kontrolü</li>
-                    <li>Risk & uyum</li>
-                    <li>Denetlenebilir otomasyon</li>
-                </ul>
+            <div class="hero-actions">
+                <a href="index.html" class="btn btn-secondary">Ana Sayfaya Dön</a>
+                <a href="contact.html" class="btn btn-outline">Bizimle Konuşun</a>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<footer>
+    <section class="section section-tight">
+        <div class="container">
+            <h2 class="section-title">Çekirdek Katmanlar</h2>
+            <p class="section-lead">
+                HUMAN-AL çekirdeği, sinyalden aksiyona kadar tüm akışı üç katmanda sadeleştirir.
+            </p>
+
+            <div class="grid grid-3">
+                <!-- Signal -->
+                <article class="card layer-card">
+                    <h3>Signal Layer</h3>
+                    <p>
+                        Karmaşık veri yığınlarını sadeleştirir. Anlamsız veriyi eleyip,
+                        karar verici için tek bakışta okunabilir sinyaller üretir.
+                    </p>
+                    <ul>
+                        <li>Veri gürültüsünü azaltma</li>
+                        <li>Operasyonel panel tasarımı</li>
+                        <li>Aksiyon özetleri</li>
+                    </ul>
+                </article>
+
+                <!-- Identity -->
+                <article class="card layer-card">
+                    <h3>Identity Layer</h3>
+                    <p>
+                        “Bu veri kimin, kime hizmet ediyor?” sorusunun cevabını netleştirir.
+                        Maske değil, gerçek sahipliği takip eder.
+                    </p>
+                    <ul>
+                        <li>Rol &amp; erişim mimarisi</li>
+                        <li>Sahiplik izi (audit trail)</li>
+                        <li>Kimlik odaklı güvenlik politikaları</li>
+                    </ul>
+                </article>
+
+                <!-- Integrity -->
+                <article class="card layer-card">
+                    <h3>Integrity Layer</h3>
+                    <p>
+                        Tüm sinyallerin tutarlılığını kontrol eder ve riskli desenleri işaretler.
+                    </p>
+                    <ul>
+                        <li>Tutarlılık kontrolü</li>
+                        <li>Risk &amp; uyum (compliance)</li>
+                        <li>Denetlenebilir otomasyon</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-muted">
+        <div class="container">
+            <h2 class="section-title">AI Layer (yakında)</h2>
+            <p class="section-lead">
+                HUMANi5 çekirdeğinin üstüne oturacak; özel ajanlar, analiz botları ve otomasyon köprüleri için ayrılmış katman.
+                <span class="muted">Yalnızca net sinyal alanını genişletir, gürültü eklemez.</span>
+            </p>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
     <div class="container footer-inner">
         <span>© 2025 HUMAN-AL Labs</span>
+        <span class="footer-note">HUMANi5 çekirdeği ile tasarlanmış insan merkezli yapay zekâ.</span>
     </div>
 </footer>
 
