@@ -3,41 +3,106 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HUMAN-AL — İnsan Merkezli Yapay Zekâ</title>
+    <title>HUMAN-AL — Signal • Identity • Integrity</title>
     <link rel="stylesheet" href="styles.css" />
 </head>
-
-<body class="dark">
-<header class="topbar">
+<body class="theme-dark">
+<header class="site-header">
     <div class="container header-inner">
-        <a class="logo" href="index.html">
-            <span class="logo-main">HUMAN-AL</span>
-            <span class="logo-sub">Signal • Identity • Integrity</span>
+        <a href="index.html" class="logo">
+            <span class="logo-mark"></span>
+            <span class="logo-text">HUMAN-AL</span>
+            <span class="logo-tagline">Signal · Identity · Integrity</span>
         </a>
 
-        <nav>
-            <a href="index.html" class="active">Ana Sayfa</a>
-            <a href="systems.html">Sistem Haritası</a>
-            <a href="contact.html">İletişim</a>
+        <nav class="main-nav">
+            <a href="index.html" class="nav-link active">Ana Sayfa</a>
+            <a href="systems.html" class="nav-link">Sistem Haritası</a>
+            <a href="contact.html" class="nav-link">İletişim</a>
         </nav>
 
-        <button id="themeToggle" class="toggle">🌙</button>
+        <button id="themeToggle" class="theme-toggle" aria-label="Tema değiştir">
+            ☾
+        </button>
     </div>
 </header>
 
-<section class="hero">
-    <div class="container">
-        <h1>Gürültüyü kesen,<br>insanı merkeze alan yapay zekâ.</h1>
-        <p>HUMAN-AL işletmeler için sessiz, güvenilir ve insan odaklı bir yapay zekâ altyapısı sunar.</p>
+<main>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-copy">
+                <p class="eyebrow">AI-Native Infrastructure</p>
+                <h1 class="hero-title">
+                    Gürültüyü kesen,<br />
+                    insanı merkeze alan yapay zekâ.
+                </h1>
+                <p class="hero-lead">
+                    HUMAN-AL, işletmeler için sessiz, yüksek güvenilirlikte yapay zekâ
+                    altyapısı kurar. Amaç: hız değil, <strong>doğru sinyal</strong>.
+                    Veriyi sadeleştirir, kimliği korur ve karar süreçlerini gerçeklikle hizalar.
+                </p>
 
-        <div class="actions">
-            <a class="btn primary" href="systems.html">Sistem Haritası</a>
-            <a class="btn outline" href="contact.html">Bizimle Konuşun</a>
+                <div class="hero-actions">
+                    <a href="systems.html" class="btn btn-primary">Sistem Haritası →</a>
+                    <a href="contact.html" class="btn btn-outline">Bizimle Konuşun</a>
+                </div>
+
+                <p class="hero-footnote">
+                    İnsan sezgisi + teknik zekâ + sistem tasarımı → tek çekirdek model.
+                </p>
+            </div>
+
+            <aside class="hero-panel">
+                <div class="hero-pill">Quiet AI Systems</div>
+
+                <div class="hero-card">
+                    <h3>Signal · Identity · Integrity</h3>
+                    <p>
+                        HUMAN-AL, karmaşık veri akışlarını üç çekirdek katmana ayırır:
+                    </p>
+                    <ul>
+                        <li><strong>Signal:</strong> Gürültüyü azaltır, karar verene sade bir tablo bırakır.</li>
+                        <li><strong>Identity:</strong> Verinin gerçek sahibini, rolünü ve erişim izini takip eder.</li>
+                        <li><strong>Integrity:</strong> Tüm hareketleri katman katman izler, riskli adımları işaretler.</li>
+                    </ul>
+                    <p class="hero-card-outcome">
+                        Sonuç: hızlı değil, <strong>tutarlı ve denetlenebilir</strong> yapay zekâ.
+                    </p>
+                </div>
+            </aside>
         </div>
-    </div>
-</section>
+    </section>
 
-<footer>
+    <!-- Where used -->
+    <section class="section section-muted">
+        <div class="container">
+            <h2 class="section-title">Nerede kullanılır?</h2>
+            <div class="grid grid-3">
+                <article class="card mini">
+                    <h4>Operasyon Panelleri</h4>
+                    <p>
+                        Şirket genelinde tek “gerçeklik tablosu” ile karar alma sürecini sadeleştirir.
+                    </p>
+                </article>
+                <article class="card mini">
+                    <h4>Risk &amp; Uyum</h4>
+                    <p>
+                        Regülasyon ve iç politika gereksinimlerini otomatik olarak işaretler.
+                    </p>
+                </article>
+                <article class="card mini">
+                    <h4>AI-Native Çözümler</h4>
+                    <p>
+                        Mevcut sistemlerin üstüne sessiz, yüksek güven katmanı olarak oturur.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
     <div class="container footer-inner">
         <span>© 2025 HUMAN-AL Labs</span>
         <span class="footer-note">Hız değil; doğru sinyale odaklanan yapay zekâ altyapısı.</span>
