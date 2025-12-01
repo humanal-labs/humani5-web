@@ -1,45 +1,62 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HUMAN-AL — İletişim</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
 </head>
-
-<body class="dark">
-<header class="topbar">
+<body class="theme-dark">
+<header class="site-header">
     <div class="container header-inner">
-        <a class="logo" href="index.html">
-            <span class="logo-main">HUMAN-AL</span>
-            <span class="logo-sub">Signal • Identity • Integrity</span>
+        <a href="index.html" class="logo">
+            <span class="logo-mark"></span>
+            <span class="logo-text">HUMAN-AL</span>
+            <span class="logo-tagline">Signal · Identity · Integrity</span>
         </a>
 
-        <nav>
-            <a href="index.html">Ana Sayfa</a>
-            <a href="systems.html">Sistem Haritası</a>
-            <a href="contact.html" class="active">İletişim</a>
+        <nav class="main-nav">
+            <a href="index.html" class="nav-link">Ana Sayfa</a>
+            <a href="systems.html" class="nav-link">Sistem Haritası</a>
+            <a href="contact.html" class="nav-link active">İletişim</a>
         </nav>
 
-        <button id="themeToggle" class="toggle">🌙</button>
+        <button id="themeToggle" class="theme-toggle" aria-label="Tema değiştir">
+            ☾
+        </button>
     </div>
 </header>
 
-<section class="page">
-    <div class="container">
-        <h1>Bizimle İletişime Geç</h1>
-        <p>Soru, iş birliği veya proje teklifiniz varsa bize ulaşabilirsiniz.</p>
+<main>
+    <section class="section">
+        <div class="container contact-layout">
+            <div class="contact-text">
+                <p class="eyebrow">İletişim</p>
+                <h1 class="page-title">Bizimle İletişime Geç</h1>
+                <p class="page-lead">
+                    HUMAN-AL hakkında soru, iş birliği veya proje konuşmak isterseniz,
+                    aşağıdaki adresten bize ulaşabilirsiniz.
+                </p>
 
-        <div class="contact-box">
-            <h3>E-posta</h3>
-            <a class="email" href="mailto:contact@human-al.org">contact@human-al.org</a>
+                <div class="contact-card">
+                    <h2>E-posta</h2>
+                    <p>
+                        <a href="mailto:contact@human-al.org">contact@human-al.org</a>
+                    </p>
+                    <p class="muted">
+                        İlk temas için basit bir e-posta yeterli. Kısa bir bağlam, mevcut
+                        sisteminiz ve hedefiniz → gerisini birlikte tasarlarız.
+                    </p>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+</main>
 
-<footer>
+<footer class="site-footer">
     <div class="container footer-inner">
         <span>© 2025 HUMAN-AL Labs</span>
+        <span class="footer-note">Sessiz ama net: sinyal odaklı yapay zekâ danışmanlığı.</span>
     </div>
 </footer>
 
