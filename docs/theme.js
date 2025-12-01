@@ -1,14 +1,27 @@
-const body = document.body;
-const toggle = document.getElementById("themeToggle");
+document.addEventListener("DOMContentLoaded", () => {
+    const body = document.body;
+    const toggle = document.getElementById("themeToggle");
 
-function set(mode) {
-    body.className = mode;
-    toggle.textContent = mode === "dark" ? "🌙" : "☀️";
-    localStorage.setItem("theme", mode);
-}
+    function applyTheme(mode) {
+        if (mode === "light") {
+            body.classList.remove("theme-dark");
+            body.classList.add("theme-light");
+            if (toggle) toggle.textContent = "☀︎";
+        } else {
+            body.classList.remove("theme-light");
+            body.classList.add("theme-dark");
+            if (toggle) toggle.textContent = "☾";
+        }
+    }
 
-set(localStorage.getItem("theme") || "dark");
+    const saved = localStorage.getItem("humanal-theme");
+    applyTheme(saved || "dark");
 
-toggle.onclick = () => {
-    set(body.className === "dark" ? "light" : "dark");
-};
+    if (toggle) {
+        toggle.addEventListener("click", () => {
+            const next = body.classList.contains("theme-dark") ? "light" : "dark";
+            applyTheme(next);
+            localStorage.setItem("humanal-theme", next);
+        });
+    }
+});
