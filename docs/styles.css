@@ -518,3 +518,54 @@ a:hover {
         display: none;
     }
 }
+/* Solutions Page Premium Styling */
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(to right, #0f0f33, #08101d);
+    color: #fff;
+}
+
+.solutions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 40px 10%;
+}
+
+.solution-box {
+    background: rgba(255,255,255,0.06);
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.08);
+    backdrop-filter: blur(6px);
+    transition: 0.35s ease;
+}
+
+.solution-box:hover {
+    transform: translateY(-6px);
+    border-color: #ffea00;
+    box-shadow: 0 0 20px rgba(255,234,0,0.15);
+}
+
+.cta-section {
+    text-align: center;
+    padding: 70px 20px;
+    background: #0a0f1c;
+    color: #fff;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    background: #ffea00;
+    padding: 12px 30px;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: 0.25s;
+}
+
+.cta-button:hover {
+    background: #fff200;
+}
