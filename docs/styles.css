@@ -591,3 +591,17 @@ a:hover {
     background: #FFD600;
     color: #000;
 }
+.vision-section {
+    padding: 60px 0;
+    line-height: 1.65;
+}
+
+.vision-section h2 {
+    margin-bottom: 24px;
+}
+
+.vision-section p, 
+.vision-section li {
+    margin-bottom: 12px;
+    opacity: 0.92;
+}
