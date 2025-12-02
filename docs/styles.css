@@ -932,3 +932,56 @@ header.site-header {
   padding: 40px 0 80px;
   opacity: 0.8;
 }
+.about-section {
+  padding: 80px 20px;
+  color: #fff;
+}
+
+.about-section .section-title {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.about-section .section-subtitle {
+  font-size: 20px;
+  opacity: 0.8;
+  margin-bottom: 40px;
+  max-width: 700px;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.about-block h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.about-block p,
+.about-block ul {
+  font-size: 18px;
+  opacity: 0.85;
+  line-height: 1.6;
+}
+
+.about-block ul {
+  list-style: disc inside;
+}
+
+/* Mobil */
+@media (max-width: 768px) {
+  .about-section .section-title {
+    font-size: 34px;
+  }
+  .about-block h2 {
+    font-size: 24px;
+  }
+  .about-block p, .about-block ul {
+    font-size: 16px;
+  }
+}
