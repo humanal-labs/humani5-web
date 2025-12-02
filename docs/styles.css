@@ -778,3 +778,13 @@ a:hover {
     opacity: 0.85;
     line-height: 1.55;
 }
+.use-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.use-card {
+    padding: 20px;
+    border-radius: 16px;
+}
