@@ -857,3 +857,21 @@ a:hover {
         display: block; /* tablet ve üzeri tekrar görünecek */
     }
 }
+.use-cards {
+  display: grid;
+  gap: 1.25rem;
+}
+
+@media(max-width: 600px) {
+  .use-cards {
+    grid-template-columns: 1fr; /* Mobilde tek sütun */
+  }
+
+  .use-card {
+    padding: 1.25rem 1rem;
+  }
+
+  .section-title {
+    margin-bottom: 1.5rem;
+  }
+}
