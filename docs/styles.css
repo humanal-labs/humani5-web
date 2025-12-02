@@ -577,3 +577,17 @@ a:hover {
     padding: 22px 26px;
     box-shadow: 0 8px 30px rgba(0,0,0,0.25);
 }
+.main-nav a {
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: 0.25s ease;
+}
+
+.main-nav a:hover {
+    background: rgba(255,255,255,0.08);
+}
+
+.main-nav .active {
+    background: #FFD600;
+    color: #000;
+}
