@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vizyon — HUMAN-AL</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="theme-dark">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">●</span>
+        <span class="logo-text">HUMAN-AL</span>
+        <span class="logo-tagline">Signal • Identity • Integrity</span>
+      </a>
+
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Ana Sayfa</a>
+        <a href="systems.html" class="nav-link">Sistem Haritası</a>
+        <a href="contact.html" class="nav-link">İletişim</a>
+        <a href="vision.html" class="nav-link active">Vizyon</a>
+      </nav>
+
+      <button id="themeToggle" class="theme-toggle"></button>
+    </div>
+  </header>
+
+  <main class="page-content container">
+    <h1>HUMAN-AL Vizyonu</h1>
+    <p>Yeni katmanı buraya inşa edeceğiz ortak.</p>
+  </main>
+
+  <script src="theme.js"></script>
+</body>
+</html>
