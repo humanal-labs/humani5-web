@@ -791,3 +791,69 @@ a:hover {
 .hero-title {
     font-size: clamp(1.8rem, 5vw, 2.4rem);
 }
+/* === MOBILE FIXES === */
+
+/* Hero başlığı mobilde daha iyi hizalansın */
+.hero-title {
+    font-size: 2.1rem;
+    line-height: 2.6rem;
+    text-align: center;
+}
+
+/* Hero lead metin */
+.hero-lead {
+    font-size: 1rem;
+    text-align: center;
+    padding: 0 12px;
+}
+
+/* Buttons mobil hizalama */
+.hero-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+
+/* Sinyal orb mobil optimize */
+.signal-orb {
+    width: 260px;
+    height: 260px;
+    right: -40px;
+    top: -40px;
+}
+
+/* === “Nerede kullanılır?” bölümünün mobil düzeni === */
+
+.use-cases .container {
+    padding: 0 16px;
+}
+
+.use-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.use-card {
+    width: 100%;
+    padding: 20px;
+    border-radius: 18px;
+}
+
+/* Başlıklar çok büyük görünmesin */
+.section-title {
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+/* Tekrarlayan kart sorununu engelleme */
+.feature-card {
+    display: none; /* zaten alt kartlarda içerik var, bunu gizle */
+}
+
+@media (min-width: 768px) {
+    .feature-card {
+        display: block; /* tablet ve üzeri tekrar görünecek */
+    }
+}
