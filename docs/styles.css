@@ -612,3 +612,41 @@ a:hover {
     margin-top: 60px;
     font-size: 14px;
 }
+/* ULTRA HERO */
+.ultra-hero {
+  padding: 140px 0 120px;
+  background: radial-gradient(circle at 30% 20%, rgba(255,255,255,0.10), rgba(0,0,0,0)) ,
+              linear-gradient(180deg, #0b1022 0%, #05070f 100%);
+  position: relative;
+}
+
+.ultra-hero .highlight {
+  color: #ffd86b;
+  text-shadow: 0 0 18px rgba(255, 208, 0, 0.55);
+}
+
+.signal-orb {
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,208,0,0.25), rgba(255,208,0,0));
+  filter: blur(40px);
+  animation: pulse 5s ease-in-out infinite;
+  margin: auto;
+  opacity: 0.85;
+}
+
+@keyframes pulse {
+  0% { transform: scale(0.9); opacity: 0.75; }
+  50% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(0.9); opacity: 0.75; }
+}
+
+.glow-btn {
+  box-shadow: 0 0 12px rgba(255,208,0,0.45);
+  transition: 0.2s;
+}
+
+.glow-btn:hover {
+  box-shadow: 0 0 22px rgba(255,208,0,0.75);
+}
