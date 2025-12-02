@@ -744,3 +744,13 @@ a:hover {
     box-shadow: 0 0 16px rgba(255,255,255,0.45);
     transform: translateY(-2px);
 }
+.hero-title {
+    letter-spacing: -0.5px;
+    line-height: 1.18;
+    font-weight: 800;
+}
+
+.hero-lead {
+    opacity: 0.9;
+    font-size: 1.15rem;
+}
