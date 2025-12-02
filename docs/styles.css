@@ -769,3 +769,12 @@ a:hover {
     box-shadow: 0 0 22px rgba(255, 255, 255, 0.10);
     transform: translateY(-4px);
 }
+.feature-card h3 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+}
+.feature-card p {
+    opacity: 0.85;
+    line-height: 1.55;
+}
